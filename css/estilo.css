@@ -95,6 +95,5 @@ footer div img {
     100%{opacity: 1;}
 }
 h2{animation-name: aparecer;
-animation-duration: 2s;
-animation-iteration-count: 10;}
-   
+    animation-duration: 2s;
+    animation-iteration-count: 10;}
