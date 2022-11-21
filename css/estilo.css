@@ -1,0 +1,100 @@
+.grid{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
+.img{ width: 100px;
+    height: 75px;
+}
+li{list-style-type: none;}
+a{text-decoration: none; color:darkcyan;font-size: 1.2rem;}
+footer{background-color: lightseagreen;border-top: 1px solid seagreen;}
+header{ position: sticky; top:0;background-color:cadetblue;}
+.sticky{position:sticky;top:0;}
+.borderBottom{border-bottom: 5px solid black;}
+img{margin:20px 0;}
+h2{text-align: center;}
+.li, ol{color:lightseagreen;
+}
+.tr, th, td{color: lightseagreen;
+}
+.th{color: black;
+}
+header, footer {
+    display:flex; 
+    flex-direction: row; 
+}
+header {
+    justify-content: space-between; 
+}
+footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main {
+    display:flex;
+    flex-direction: column;
+}
+.nav li {padding:15px;background-color: lightblue;margin:10px; border-radius: 25px;}
+.contenedorLogo{margin-left: 20px;}
+.m25{margin:25px;}
+.itemHijo1{order: 5;}
+.itemHijo2{order: 2;}
+.itemHijo3{order: -2;}
+.itemHijo4{order: 0;}
+.itemHijo5{order: -5;}
+/* INTERVALO MOBILE */
+@media screen and (max-width:768px){
+    .imgEncabezado{display: none;}
+    .flex{justify-content: center;}
+    ul{flex-wrap: wrap;}
+    a{font-size:1.3rem;}
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto-g-main{display:flex;flex-direction:column;align-items:center;}
+    input{margin:7px 0;}
+    h2{text-align: center;}
+    .servicios-g-main{display:grid;grid-template-areas: "titulo" "imgIzq" "textoDer" "imgDer" "textoIzq";grid-template-columns: 100%;grid-template-rows: repeat(5,auto);grid-row-gap: 10px;}
+}
+/* INTERVALO TABLET */
+@media screen and (min-width:769px) and (max-width:1023px) {
+}
+/* INTERVALO DESKTOP */
+@media screen and (min-width:1024px) {
+}
+@keyframes animacionLogo {
+    0%{transform:rotateX(100deg);}
+    25%{transform:scale(2,2);}
+    50%{transform:skewX(90deg);}
+    75%{transform:translateY(-50px);}
+    100%{transform:rotate(0deg);}
+}
+/* 2da parte: asignacion de la animacion */
+footer div img {
+    animation-name: animacionLogo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@keyframes aparecer {
+    0%{opacity:0;}
+    100%{opacity: 1;}
+}
+h2{animation-name: aparecer;
+animation-duration: 2s;
+animation-iteration-count: 10;}
+   
