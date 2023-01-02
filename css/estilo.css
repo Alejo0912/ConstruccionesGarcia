@@ -62,12 +62,13 @@ main {
     footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
+        align-items: center;}
     .contacto-g-main{display:flex;flex-direction:column;align-items:center;}
     input{margin:7px 0;}
     h2{text-align: center;}
     .servicios-g-main{display:grid;grid-template-areas: "titulo" "imgIzq" "textoDer" "imgDer" "textoIzq";grid-template-columns: 100%;grid-template-rows: repeat(5,auto);grid-row-gap: 10px;}
+    .imggg { max-width: 300px;
+    }
 }
 /* INTERVALO TABLET */
 @media screen and (min-width:769px) and (max-width:1023px) {
@@ -97,3 +98,10 @@ footer div img {
 h2{animation-name: aparecer;
     animation-duration: 2s;
     animation-iteration-count: 10;}
+
+.iframe{
+margin-bottom: 30px;
+}
+.table {
+    margin-bottom: 30px;
+  }
